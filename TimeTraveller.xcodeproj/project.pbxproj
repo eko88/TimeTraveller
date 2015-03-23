@@ -14,6 +14,9 @@
 		D3E18EBE1AC0B35E00295180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E18EBD1AC0B35E00295180 /* Images.xcassets */; };
 		D3E18EC11AC0B35E00295180 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E18EBF1AC0B35E00295180 /* LaunchScreen.xib */; };
 		D3E18ECD1AC0B35F00295180 /* TimeTravellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E18ECC1AC0B35F00295180 /* TimeTravellerTests.swift */; };
+		D3E18EDD1AC0D51300295180 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E18ED81AC0D51300295180 /* TFHpple.m */; };
+		D3E18EDE1AC0D51300295180 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E18EDA1AC0D51300295180 /* TFHppleElement.m */; };
+		D3E18EDF1AC0D51300295180 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E18EDC1AC0D51300295180 /* XPathQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,13 @@
 		D3E18EC61AC0B35F00295180 /* TimeTravellerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTravellerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E18ECB1AC0B35F00295180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3E18ECC1AC0B35F00295180 /* TimeTravellerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTravellerTests.swift; sourceTree = "<group>"; };
+		D3E18ED61AC0D51200295180 /* TimeTraveller-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeTraveller-Bridging-Header.h"; sourceTree = "<group>"; };
+		D3E18ED71AC0D51300295180 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHpple.h; path = ../../hpple/Pod/Classes/TFHpple.h; sourceTree = "<group>"; };
+		D3E18ED81AC0D51300295180 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHpple.m; path = ../../hpple/Pod/Classes/TFHpple.m; sourceTree = "<group>"; };
+		D3E18ED91AC0D51300295180 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHppleElement.h; path = ../../hpple/Pod/Classes/TFHppleElement.h; sourceTree = "<group>"; };
+		D3E18EDA1AC0D51300295180 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFHppleElement.m; path = ../../hpple/Pod/Classes/TFHppleElement.m; sourceTree = "<group>"; };
+		D3E18EDB1AC0D51300295180 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = ../../hpple/Pod/Classes/XPathQuery.h; sourceTree = "<group>"; };
+		D3E18EDC1AC0D51300295180 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = ../../hpple/Pod/Classes/XPathQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,12 @@
 		D3E18EB01AC0B35E00295180 /* TimeTraveller */ = {
 			isa = PBXGroup;
 			children = (
+				D3E18ED71AC0D51300295180 /* TFHpple.h */,
+				D3E18ED81AC0D51300295180 /* TFHpple.m */,
+				D3E18ED91AC0D51300295180 /* TFHppleElement.h */,
+				D3E18EDA1AC0D51300295180 /* TFHppleElement.m */,
+				D3E18EDB1AC0D51300295180 /* XPathQuery.h */,
+				D3E18EDC1AC0D51300295180 /* XPathQuery.m */,
 				D3E18EB31AC0B35E00295180 /* AppDelegate.swift */,
 				D3E18EB81AC0B35E00295180 /* ViewController.swift */,
 				D3E18EBA1AC0B35E00295180 /* Main.storyboard */,
@@ -86,6 +102,7 @@
 				D3E18EBF1AC0B35E00295180 /* LaunchScreen.xib */,
 				D3E18EB51AC0B35E00295180 /* TimeTraveller.xcdatamodeld */,
 				D3E18EB11AC0B35E00295180 /* Supporting Files */,
+				D3E18ED61AC0D51200295180 /* TimeTraveller-Bridging-Header.h */,
 			);
 			path = TimeTraveller;
 			sourceTree = "<group>";
@@ -218,6 +235,9 @@
 				D3E18EB91AC0B35E00295180 /* ViewController.swift in Sources */,
 				D3E18EB71AC0B35E00295180 /* TimeTraveller.xcdatamodeld in Sources */,
 				D3E18EB41AC0B35E00295180 /* AppDelegate.swift in Sources */,
+				D3E18EDD1AC0D51300295180 /* TFHpple.m in Sources */,
+				D3E18EDF1AC0D51300295180 /* XPathQuery.m in Sources */,
+				D3E18EDE1AC0D51300295180 /* TFHppleElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +362,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TimeTraveller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeTraveller/TimeTraveller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +375,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TimeTraveller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeTraveller/TimeTraveller-Bridging-Header.h";
 			};
 			name = Release;
 		};

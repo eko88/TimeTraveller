@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TimeTraveller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-8m-5uV">
+                                <rect key="frame" x="51" y="454" width="498" height="31"/>
+                                <connections>
+                                    <action selector="timeSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WNh-9P-u7z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsF-JW-uRZ">
+                                <rect key="frame" x="295" y="505" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKZ-qo-H26">
+                                <rect key="frame" x="282" y="110" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fKZ-qo-H26" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="XBg-hd-ivQ"/>
+                            <constraint firstItem="nsF-JW-uRZ" firstAttribute="top" secondItem="ceq-8m-5uV" secondAttribute="bottom" constant="21" id="b8u-s8-XBZ"/>
+                            <constraint firstItem="ceq-8m-5uV" firstAttribute="centerX" secondItem="nsF-JW-uRZ" secondAttribute="centerX" id="j5u-Yh-J6x"/>
+                            <constraint firstItem="fKZ-qo-H26" firstAttribute="centerX" secondItem="ceq-8m-5uV" secondAttribute="centerX" id="k2a-Hz-58Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nsF-JW-uRZ" secondAttribute="bottom" constant="74" id="ny5-7g-K9m"/>
+                            <constraint firstItem="ceq-8m-5uV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xmn-4b-Eow"/>
+                            <constraint firstItem="ceq-8m-5uV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="yVj-ze-nra"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="date" destination="fKZ-qo-H26" id="F0C-DF-8wf"/>
+                        <outlet property="percent" destination="nsF-JW-uRZ" id="LSY-kq-2lk"/>
+                        <outlet property="slider" destination="ceq-8m-5uV" id="3Ld-tz-4bb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
